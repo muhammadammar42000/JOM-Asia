@@ -1,0 +1,127 @@
+.utilities{
+    &_heading {
+        
+        font-size: 21px;
+        color: #37435C;
+        margin: 24px 0;
+        margin-bottom: 29px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+    &_addbtn {
+        background-color: transparent;
+        color: #707070;
+        border: 2px solid #9A999D;
+        padding: 8px;
+        margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    &_body {
+        background-color: #fff;
+        padding: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    &_items{
+        font-size: 13px;
+        // padding: 15px;
+        background-color: #CCDDFC;
+        border-radius: 10px;
+        margin-top: 14px;
+        margin-left: 18px;
+        // height: 226px;
+        width: 254px;
+        position: relative;
+
+    }
+    &_inside {
+        img {
+            width: 254px;
+            border-radius: 10px;
+            height: 170px;
+        }
+    }
+    &_tags {
+        padding: 5px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text {
+            font-size: 12px;
+            width: 50%;
+            text-align: left;
+            color: #1a4e74;
+        }
+        .heading {
+            font-size: 12px;
+            font-weight: bold;
+            color: #1a4e74;
+            width: 50%;
+        }
+    }
+    &_delete {
+        position: absolute;
+        top: 176px;
+        left: 208px;
+    
+    }
+    &_delete:hover {
+
+        .helping {
+            background-color: #1a4e74;
+            color: #fff;
+            font-size: 11px;
+            display: block;
+            width: 150px;
+            position: absolute;
+            margin: -24px;
+            top: -44px;
+            padding: 10px;
+            border-radius: 10px;
+            z-index: 1;
+        }
+      
+    }
+    .helping {
+        display: none;
+    }
+    &_btn {
+        padding: 9px 25px;
+        width: 100%;
+        text-align: center;
+        .accept{
+            background-color: #4785FF;
+            color: #fff;
+            border: none;
+            padding: 7px;
+            margin-right: 10px;
+            font-size: 10px;
+            border-radius: 5px;
+            width: 70px;
+            // box-shadow: 0 0 20px 0px #7298e6;
+        }
+        .reject{
+            background-color: #EC6D6D;
+            color: #fff;
+            border: none;
+            padding: 7px;
+            margin-right: 10px;
+            font-size: 10px;
+            border-radius: 5px;
+            width: 70px;
+            // box-shadow: 0 0 20px 0px #eaa2a2;
+
+        }
+    }
+   }

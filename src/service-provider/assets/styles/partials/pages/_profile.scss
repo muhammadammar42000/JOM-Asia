@@ -1,0 +1,173 @@
+.profile
+{
+    display: flex;
+    background: linear-gradient(90deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url('../../../images/bg1.png');
+    background-size: cover;
+    background-position: bottom;
+
+    &_right
+    {
+        flex-grow: 1;
+        padding: 40px;
+        margin-left: 50px;
+        min-height: 100vh;
+    }
+
+    &_mainTitle
+    {
+        font-size: 30px;
+        font-weight: 600;
+        color: $secondary;
+    }
+
+    &_inner
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    &_form
+    {
+        width: 350px;
+        border-radius: 10px;
+        padding: 50px 35px;
+    }
+
+    ::-webkit-scrollbar 
+    {
+        width: 0px;
+    }
+
+    &_title
+    {
+        font-size: 24px;
+        font-weight: 600;
+        color: $secondary;
+        margin-bottom: 30px;
+    }
+
+    label
+    {
+        color: $secondary;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    input
+    {
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        padding: 12px 20px;
+        background: white;
+        outline: none;
+        box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    &_btn
+    {
+        width: 80%;
+        margin: auto;
+        display: block;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 0;
+        margin-top: 20px;
+        box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+        font-size: 14px;
+    }
+
+    &_submit
+    {
+        background: $primary;
+        color: white;
+    }
+    
+    &_create
+    {
+        background: white;
+        color: $primary;
+    }
+
+    &_err
+    {
+        font-weight: 600;
+        color: $secondary;
+    }
+
+    input[type="file"]
+    {
+        display: none;
+    }
+
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield !important;
+    }
+
+    &_images
+    {
+        display: flex;
+
+        label
+        {
+            cursor: pointer;
+        }
+    }
+
+    // &_select
+    // {
+    //     position: relative;
+
+    //     img
+    //     {
+    //         position: absolute;
+    //         top: 7px;
+    //         left: 20px;
+    //         width: 30px;
+    //         height: 30px;
+    //     }
+    // }
+
+    // select
+    // {
+    //     width: 100%;
+    //     border-radius: 10px;
+    //     border: none;
+    //     padding: 15px 20px 15px 60px;
+    //     background: white;
+    //     outline: none;
+    //     box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+    //     margin-bottom: 30px;
+    //     font-size: 14px;
+    // }
+}
+
+@media (max-width: 991px)
+{
+    .profile
+    {
+        &_right
+        {
+            padding: 10px;
+        }
+
+        &_mainTitle
+        {
+            font-size: 18px;
+        }
+
+        &_form
+        {
+            width: auto;
+            padding: 20px 10px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.welcome
+{
+    background-image: url('../../../../../admin/assets/images/bg.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_inner
+    {
+        text-align: center;
+    }
+
+    &_logo
+    {
+        width: 190px;
+    }
+
+    &_title
+    {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 45px;
+        margin: 100px 0 40px;
+        color: white;
+    }
+
+    &_btn
+    {
+        background: linear-gradient(0deg, #1e2c4f, #10afdc);
+        height: 100px;  
+        border: none;
+        color: white;
+        width: 300px;
+        height: 65px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    &_btn:hover
+    {
+        background-image: linear-gradient(0deg, #10afdc, #1e2c4f);
+    }
+}

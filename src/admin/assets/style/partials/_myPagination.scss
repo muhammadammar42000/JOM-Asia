@@ -1,0 +1,37 @@
+.myPagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    flex-wrap: wrap;
+
+    .customHeader {
+        display: flex;
+        align-items: center;
+        margin-top: -9px;
+        margin-bottom: 10px;
+
+        p {
+            margin-right: 10px;
+            color: #293462;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        select {
+            padding: 3px;
+            border-radius: 5px;
+            border: 1px solid rgb(71, 71, 71);
+            outline: none;
+        }
+    }
+
+    .page-item.active .page-link {
+        z-index: 3;
+        color: #fff;
+        background-color: #293462;
+        border-color: #293462;
+    }
+    .page-link {
+        color: #293462;
+    }
+}

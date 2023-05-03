@@ -1,0 +1,259 @@
+.social
+{
+    margin: 30px 0;
+    &_mainTitle
+    {
+        font-weight: 600;
+        font-size: 26px;
+        color: #CF0820;
+    }
+    &_mainCard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_body
+    {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &_card
+    {
+        font-family: 'Open Sans';
+        padding: 0 35px 60px 0;
+        min-width: 280px;
+        width: 33%;
+    }
+
+    &_top
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > div:first-child
+        {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &_userImg
+    {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        border-radius: 50px;
+
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_userName
+    {
+        font-size: 12px;
+        font-weight: 600;
+        color:#293462;
+        margin-left: 10px;
+    }
+
+    &_time
+    {
+        font-size: 12px;
+        color: gray;
+    }
+    &_play {
+        position: relative;
+
+        img {
+            
+            position: absolute;
+            width: 45px !important;
+            right: 16px;
+            top: 10px;
+            height: 45px !important;
+        }
+    }
+    &_img
+    {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 0px 20px 20px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: black;
+        position: relative;
+
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // opacity: 0.6;
+        }
+    }
+
+    &_title
+    {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        font-weight: 600;
+        width: 100%;
+        padding: 6px 20px;
+    }
+
+    &_tag
+    {
+        margin-top: 10px;
+        padding-left: 25px;
+        font-size: 12px;
+        color:#293462;
+    }
+
+    &_icons
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px 5px;
+        margin-top: 15px;
+        border-bottom: 1px solid gray;
+    }
+
+    &_likes, &_share
+    {
+        display: flex;
+        align-items: center;
+
+        img
+        {
+            width: 20px;
+            cursor: pointer;
+        }
+
+        p
+        {
+            font-size: 12px;
+            margin-left: 10px;
+            color: gray;
+        }
+    }
+    &_share {
+        position: relative !important
+    }
+    &_shareIcons {
+        display: flex;
+        gap: 5px;
+        bottom: 40px;
+        right: -21px;
+        background: rgb(238, 236, 236);
+        padding: 0px 6px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+        position: absolute;
+
+        svg {
+            width: 27px;
+        }
+    }
+    &_options
+    {
+        cursor: pointer;
+        position: relative;
+
+        img
+        {
+            padding: 0 5px;
+        }
+    }
+    &_error {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    &_dropdown
+    {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        background: white;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+        z-index: 1;
+
+        ul
+        {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li
+        {
+            padding: 4px 15px;
+            margin: 5px 0;
+        }
+
+        li:hover
+        {
+            background-color: rgb(218, 218, 218);
+        }
+
+        a
+        {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 14px;
+            color:#293462;
+
+            img
+            {
+                width: 22px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.profile
+{
+    .social_card
+    {
+        width: 100%;
+        padding: 0 0px 60px 0;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .social
+    {
+        &_card
+        {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 767px)
+{
+    .social
+    {
+        &_card
+        {
+            width: 100%;
+            padding: 0 0px 60px 0;
+        }
+    }
+}

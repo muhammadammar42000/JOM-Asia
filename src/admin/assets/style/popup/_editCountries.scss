@@ -1,0 +1,283 @@
+.editCountries {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(61, 61, 61, 0.233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &_inner {
+        width: 380px;
+        height: 450px;
+        overflow: auto;
+        background-color: white;
+        position: relative;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+    }
+
+    &_inner::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .css-t3ipsp-control {
+        padding: 5px 10px;
+        border-radius: 45px;
+        border: none;
+        outline: none;
+        border-color: none;
+        color: black !important;
+        font-weight: 700 ;
+     }
+
+    .css-13cymwt-control {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: default;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        min-height: 38px;
+        outline: 0!important;
+        position: relative;
+        -webkit-transition: all 100ms;
+        transition: all 100ms;
+        // background-color: hsl(0, 0%, 100%);
+        // border-color: hsl(0, 0%, 80%);
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        border-radius: 45px;
+        border: none;
+        box-shadow:0px 1px 4px rgb(110 110 110 / 66%);
+        outline: none;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+    }
+
+
+    &_top {
+        width: 100%;
+        height: 150px;
+        background: url("../../images/JOM-Web-Aseets-01.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+
+        p {
+            color: rgb(236, 235, 235);
+            font-size: 23px;
+            font-weight: 450;
+            position: relative;
+            top: 16px;
+            margin-left: 25px;
+        }
+
+
+        img {
+            width: 15px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+    }
+
+
+    &_bgUploader {
+        position: relative;
+        z-index: 999;
+        top: -70px;
+        width: 80%;
+        height: 150px;
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 90px;
+        box-shadow: 0px 2px 11px -5px black;
+        background-color: white;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+
+
+    &_imgUploader {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative;
+        overflow: hidden;
+        
+       .uploadFile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+      .uploadFile:focus + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+      }
+      .uploadFile + label * {
+        pointer-events: none;
+      }
+
+     .updloadImgIcon {
+
+        img {
+            width: 60px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+     }
+
+
+     .viewImg {
+        width: 100%;
+     }
+  
+     }
+     
+
+     &_LogoUploader {
+        width: 22%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative;
+        top: -30px;
+        overflow: hidden;
+        
+       .uploadFile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+      .uploadFile:focus + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+      }
+      .uploadFile + label * {
+        pointer-events: none;
+      }
+
+
+      .viewImg {
+        width: 100%;
+     }
+     
+     }
+
+     .logo {
+        width: 80px;
+     }
+
+     &_inputWrapper {
+        // background-color: red;
+        width: 100%;
+        padding: 10px 40px;
+        height: 100px;
+        position: relative;
+        bottom: 20px;
+     }
+
+
+
+     &_child {
+        padding: 5px 0px;
+        margin: 10px 0px;
+
+
+        img {
+            width: 20px;
+        }
+        
+
+        p {
+            margin: 8px 0px;
+            color: #1297C2 ;
+            font-weight: 500;
+        }
+
+
+        input {
+            margin: 2px 0px;
+            width: 100%;
+            padding: 8px 30px;
+            outline: none;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0px 0px 12px -7px black;
+        }
+
+
+        input::placeholder {
+            color: grey
+        }
+        
+     }
+
+
+     &_btn {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px !important;
+
+
+        button {
+            background-color: #22a3ce;
+            padding: 13px 5px;
+            width: 200px;
+            border-radius: 20px;
+            text-align: center;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 15px;
+        }
+     }
+
+
+
+     .Reactselect {
+        position: relative;
+        /* right: 26px; */
+        margin: 10px 0px;
+        width: 293px;
+        border-radius: 50px !important;
+    }
+
+  
+  
+}

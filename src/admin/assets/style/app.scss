@@ -1,0 +1,65 @@
+@import './partials/topbar';
+@import './partials/leftbar';
+@import './partials/rightbar';
+@import './partials/layout';
+@import './partials/coupon';
+@import './partials/notification';
+@import './partials/services';
+@import './partials/home';
+@import './partials/clients';
+@import './partials/editorchoice';
+@import './partials/servicelist';
+@import './partials/360images';
+@import './partials/gamification';
+@import './partials/booking';
+@import './partials/sliders';
+@import './partials/requests';
+@import './partials/utilities';
+@import './partials/service_details';
+@import './partials/profile';
+@import './partials/social';
+@import './partials/post';
+@import './partials/myPagination';
+
+// popups
+@import './popup/addCoupon';
+@import './popup/addGamification';
+@import './popup/pendingPopup';
+@import './popup/addService';
+@import './popup/addPost';
+@import './popup/addMap';
+@import './popup/editor';
+@import './popup/accept';
+@import './popup/reject';
+@import './popup/bigImage';
+@import './popup/listCategory';
+@import './popup/QRimage';
+@import "./popup/addCateogory";
+@import './popup/arrangeServices';
+@import './popup/createCountry';
+@import './popup/editCountries';
+@import './popup/editServices';
+
+
+// JES
+@import "./popup/editProfileJES";
+@import './popup/DisclaimerJES';
+
+// tables
+@import './popup/addCoupon';
+@import './tables/pendingTable';
+
+@import './base/typography';
+@import './partials/toggle';
+
+button, i {
+    cursor: pointer;
+}
+
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

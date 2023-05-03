@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@font-face
+{
+    src: url('../../../fonts/GIANEGOTHICSANS\ REGULAR.OTF');
+    font-family: custom-font;
+}
+
+body
+{
+    font-family: 'custom-font', sans-serif;
+}
+
+$primary: #10afdc;
+$secondary: #CF0820;

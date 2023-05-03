@@ -1,0 +1,30 @@
+// $primary_color: '#283562';
+
+.top_bar {
+    background-color: #283562;
+    height: 70px;
+
+    &_items {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.top_logo {
+    padding-left: 20px;
+    width: 155px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 45px;
+}
+.top_logo_bell {
+    text-align: right;
+
+    img {
+
+        width: 12%;
+        text-align: right;
+        padding-right: 22px;
+    }
+}

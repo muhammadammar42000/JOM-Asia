@@ -1,0 +1,45 @@
+.homesp
+{
+    display: flex;
+    background: linear-gradient(90deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url('../../../images/bg1.png');
+    background-size: cover;
+    background-position: bottom;
+
+    &_right
+    {
+        flex-grow: 1;
+        padding: 40px;
+        margin-left: 50px;
+        min-height: 100vh;
+    }
+
+    &_mainTitle
+    {
+        font-size: 30px;
+        font-weight: 600;
+        color: $secondary;
+    }
+
+    &_title
+    {
+        font-size: 24px;
+        color: $secondary;
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .homesp
+    {
+        &_right
+        {
+            padding: 10px;
+        }
+
+        &_mainTitle
+        {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.ec{
+    margin-top: 20px;
+
+
+    &_heading {
+        font-size: 21px;
+        color: #37435C;
+        margin: 14px 0;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+
+        .add {
+            background-color: transparent;
+            color: #707070;
+            border: 2px solid #9A999D;
+            padding: 8px;
+            margin-right: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        // .add:hover {
+        //     // background-color: #353f6b;
+        //     color: #707070;
+        // }
+    }
+
+
+    &_rightSectionHead {
+        width: 300px;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    &_totalMaps {
+        font-size: 15px;
+        font-weight: 500;
+        font-style: italic;
+
+
+        .mapFigure {
+            color: #28A6DE;
+            font-size: 28px;
+            margin-left: 20px;
+            font-weight: 700;
+            font-style:normal !important;
+
+        }
+        
+    }
+    
+    &_body {
+        // max-height: 500px;
+        background-color: #fff;
+        padding: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        justify-content: center;
+
+
+        &_images {
+            width: 234px;
+            position: relative;
+            margin-left: 19px;
+            margin-top: 10px;
+            background-color: black;
+            border-radius: 19px;
+
+            .delete-icon {
+                display: none;
+            }
+            img {
+                width: 100%;
+                border-radius: 19px;
+                opacity: 0.8;
+                
+            }
+            .main-img {
+                height: 231px;
+                width: 234px;
+            }
+        }
+        &_icon {
+            width: 45px;
+            position: absolute;
+            top: 16px;
+            left: 173px;
+            background-color: #1a4e74;
+            border-radius: 12px;
+            padding: 6px 9px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                img {   
+                    width: 48%;
+                    
+                    // border-radius: 19px;
+                }
+                 p{
+                     color: #fff;
+                     font-size: 10px;
+                 }
+            
+        }
+
+        &_text {
+            position: absolute;
+            top: 95px;
+            left: 30px;
+
+            .name {
+                font-size: 20px;
+                color: #fff;
+                line-height: 1;
+            }
+            .green {
+                color: #00FF67;
+                display: flex;
+                align-items: center;
+                // margin-top: -10px;
+                font-size: 12px;
+
+                p {
+                    margin-left: 5px;
+                }
+                .location {
+                    width: 15px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    &_body:hover {
+        overflow: auto;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;
+    }
+    // &_body:hover {
+    //     .delete-icon {
+    //         display: block;
+    //         background-color: #00FF67;
+    //         padding: 100px;        }
+    // }
+    &_body::-webkit-scrollbar{
+             
+        display: none;  /* Safari and Chrome */
+     
+
+ }
+
+}
+.ec_body_images:hover {
+    background-color: #f4f7f5;
+.delete-icon {
+    display: block;
+
+    i {
+        font-size: 20px;
+        color: #D60B20;
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        left: 192px;
+    }
+}
+}
+@media (max-width: 1045px)
+{
+
+    .ec_body {
+        justify-content: center;
+
+    }
+}
+@media (max-width: 400px)
+{
+    .ec_body_icon {
+        left: 134px;
+    }
+}

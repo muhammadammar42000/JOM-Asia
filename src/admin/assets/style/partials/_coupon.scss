@@ -1,0 +1,101 @@
+.coupon {
+    &_heading {
+        font-size: 21px;
+        color: #D60B20;
+        margin: 24px 0;
+        margin-bottom: 29px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            background-color: transparent;
+            color: #1a4e74;
+            border: none;
+            padding: 7px;
+            margin-right: 10px;
+            border: 1px solid #1a4e74;
+            width: 100px;
+            border-radius: 5px;
+            font-size: 13px;
+
+        }
+        button:hover {
+            background-color: #353f6b;
+            color: #fff;
+        }
+    }
+    // &_content {
+
+    // }
+    &_cards {
+        background-color: #fff;
+        padding: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        justify-content: center;
+        &_single {
+            background-color: #E4E8F2;
+            margin-left: 19px;
+            border-radius: 11px;
+            margin-top: 10px;
+            padding: 26px;
+            position: relative;
+            .expired {
+                background-color: #D60B20;
+                color: #fff;
+                width: 56px;
+                padding: 6px 29px 7px 8px;
+                border-radius: 10px;
+                position: absolute;
+                top: 0px;
+                left: -9px;
+                transform: rotate(-20deg);
+                font-size: 11px;
+            }
+            .top_img {
+                width: 200px;
+                border-radius: 10px;
+            }
+            .barcode_img {
+                width: 200px;
+                border-radius: 10px;
+            }
+            .middle {
+                margin-top: 10px;
+
+                h5 {
+                    color: #283562;
+                    font-weight: bold;    
+                    font-size: 13px;
+                }
+                p{
+                    color: #283562;
+                    font-size: 10px;
+                    // margin-top: -15px;
+                }
+            }
+            .detail_text {
+                color: #6e6f70;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+            }
+            .discount {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                .number {
+                color: #D60B20;
+                font-weight: bold;    
+                }
+                .text {
+                    color: #283562;
+
+                }
+            }
+        }
+    }
+}

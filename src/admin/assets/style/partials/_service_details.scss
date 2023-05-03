@@ -1,0 +1,190 @@
+.serviceDetails
+{
+    display: flex;
+    // background: linear-gradient(90deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%), url('../../../images/bg1.png');
+    background-size: cover;
+    background-position: bottom;
+
+    &_right
+    {
+        flex-grow: 1;
+        min-height: 100vh;
+    }
+
+    &_mainTitle
+    {
+        font-size: 30px;
+        font-weight: 600;
+        color: #D60B20;
+    }
+    &_edit
+    {
+        background-color: #283562;
+        border: none;
+        color: white;
+        padding: 10px 25px 7px;
+        border-radius: 5px;
+    }
+    &_title
+    {
+        font-size: 24px;
+        color: #D60B20;
+        margin: 35px 0 20px;
+    }
+
+    &_top
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &_details
+    {
+        display: flex;
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+
+    &_images
+    {
+        width: 250px;
+        height: 170px;
+        border-radius: 20px;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        img
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_mid
+    {
+        margin-left: 35px;
+    }
+
+    &_name
+    {
+        font-size: 22px;
+        font-weight: 600;
+        color: #283562;
+    }
+
+    &_location
+    {
+        display: flex;
+        align-items: center;
+        color: #283562;
+        margin: 15px 0;
+
+        img
+        {
+            width: 20px;
+            margin-right: 15px;
+        }
+    }
+
+    &_desc
+    {
+        min-width: 230px;
+        font-size: 12px;
+        background: white;
+        box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+        border-radius: 10px;
+        padding: 10px;
+        line-height: 15px;
+        font-family: Open sans;
+        color: gray;
+    }
+
+    &_info
+    {
+        margin-top: 75px;
+        font-size: 12px;
+        font-family: 'Open sans';
+        margin-left: 30px;
+    }
+
+    &_textRed
+    {
+        color: #D60B20;
+    }
+
+    &_text
+    {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .service
+    {
+        &_right
+        {
+            padding: 10px;   
+        }
+
+        &_details
+        {
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+
+        &_mid
+        {
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        &_desc
+        {
+            width: auto;
+        }
+
+        &_location
+        {
+            margin: 10px 0;
+        }
+
+        &_info
+        {
+            margin-top: 25px;
+            margin-left: 0;
+        }
+
+        &_mainTitle
+        {
+            font-size: 18px;
+        }
+
+        &_edit
+        {
+            padding: 5px 20px 5px;
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 400px)
+{
+    .serviceDetails_mid {
+     margin-left: 0; 
+    }
+    .serviceDetails_details {
+
+        padding: 17px;
+
+    }
+    .serviceDetails_images {
+        width: 226px;
+    }
+    .serviceDetails_info {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,26 @@
+// BASE
+@import './partials/base/typography';
+@import './partials/base/general';
+
+// LAYOUTS
+@import './partials/layouts/navBar';
+
+//COMPONENTS
+@import './partials/components/cards';
+@import './partials/components/tables';
+@import './partials/components/login';
+@import './partials/components/signup';
+@import './partials/components/approve';
+@import './partials/components/products';
+@import './partials/components/addProduct';
+@import './partials/components/tableModal';
+@import './partials/components/confirm';
+@import './partials/components/congrats';
+
+// PAGES
+@import './partials/pages/welcome';
+@import './partials/pages/home';
+@import './partials/pages/service';
+@import './partials/pages/profile';
+@import './partials/pages/loader';
+@import './partials/pages/gallery';

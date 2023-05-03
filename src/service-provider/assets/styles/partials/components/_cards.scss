@@ -1,0 +1,63 @@
+.cards
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &_body
+    {
+        background-color: white;
+        width: 24%;
+        padding: 25px;
+        border-radius: 15px;
+        position: relative;
+        height: 135px;
+        box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+    }
+
+    &_title
+    {
+        color: $primary;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    &_value
+    {
+        font-size: 35px;
+        font-weight: 600;
+        color: $secondary;
+        position: absolute;
+        right: 25px;
+        bottom: 10px;
+    }
+
+    &_body:first-child &_icon
+    {
+        width: 45px;
+    }
+
+    &_icon
+    {
+        width: 35px;
+        position: absolute;
+        left: 25px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .cards
+    {
+        flex-wrap: wrap;
+
+        &_body
+        {
+            width: 49%;
+            min-width: 285px;
+            margin-bottom: 20px;
+        }
+    }
+}

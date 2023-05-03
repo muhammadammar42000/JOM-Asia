@@ -1,0 +1,102 @@
+.reject_popup {
+    background-color: rgba(108, 108, 108, 0.603);
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        &_inner
+        {
+            width: 250px;
+            height: 180px;
+            background-image: linear-gradient(to bottom, #becff5, #DCE2FA);          
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 0px 22px 0px 22px;
+            box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+
+            .container {
+                padding: 10px;
+                position: relative;
+
+                p {
+                    color: #1a4e74;
+                    font-size: 15px;
+                }
+                .main_heading {
+                    color: #1a4e74;
+                    font-size: 20px;
+                }
+                i {
+                    color: #1a4e74;
+                    position: absolute;
+                    top: 32px;
+                }
+            }
+            hr {
+                // color: #1a4e74;
+                background: #1a4e74;
+                height: 1px;
+                border: none;
+                width: 100%;
+            }
+            i{
+                margin-left: 285px;
+                font-size: 18px;
+                position: absolute;
+                top: 42px;
+                right: 33px;
+            }
+            .popup_body{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .fa{
+            cursor: pointer;
+        }
+        p {
+            text-align: center;
+            font-size: small;
+            margin-bottom: 0px;
+    
+        }
+        button {
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            color: #563D94;
+            font-size: 14px;
+            margin-top: 50px;
+            padding: 10px;
+            // padding-top: 5px;
+            // padding-bottom: 5px;            
+            width: 25%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .accept{
+            background-color: #1a4e74;
+            color: #d6d6d6;
+            border: none;
+            padding: 7px;
+            margin-right: 10px;
+            width: 100px;
+        }
+        .reject{
+            background-color: transparent;
+            color: #1a4e74;
+            border: none;
+            padding: 7px;
+            margin-right: 10px;
+            border: 1px solid #1a4e74;
+            width: 100px;
+
+        }
+    }

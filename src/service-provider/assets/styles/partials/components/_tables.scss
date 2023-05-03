@@ -1,0 +1,149 @@
+.tables
+{
+    background: white;
+    border-radius: 15px;
+    padding: 25px 25px 0;
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+    margin-top: 20px;
+
+    &_top
+    {
+        display: flex;
+        justify-content: space-between;
+
+        p
+        {
+            font-size: 20px;
+            border-bottom: 1px solid gray;
+            width: 34%;
+            padding-bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+            color: gray;
+        }
+
+        p:hover
+        {
+            color: $secondary;
+        }
+    }
+
+    &_active
+    {
+        border-bottom: 2px solid $secondary !important;
+        color: $secondary !important;
+    }
+
+    &_main
+    {
+        height: 400px;
+        overflow: auto;
+    }
+
+    ::-webkit-scrollbar 
+    {
+        width: 0px;
+    }
+
+    table
+    {
+        width: 100%;
+        margin-top: 10px;
+        border-collapse:separate; 
+        border-spacing: 0 1em;
+
+        thead
+        {
+            color: white;
+            position: sticky;
+            top: 0;
+
+            td
+            {
+                padding: 15px 10px 13px;
+                background: $primary;
+                font-size: 14px;
+                font-family: Open Sans;
+            }
+
+            td:first-child
+            {
+                border-radius: 8px 0 0 8px;
+            }
+
+            td:last-child
+            {
+                border-radius: 0 8px 8px 0;
+            }
+        }
+
+        tbody
+        {
+            color: $primary;
+
+            td
+            {
+                padding: 15px 10px 12px;
+                background: #EBEEF1;
+                font-size: 12px;
+                font-family: Open Sans;
+            }
+
+            td:first-child
+            {
+                border-radius: 8px 0 0 8px;
+            }
+
+            td:last-child
+            {
+                border-radius: 0 8px 8px 0;
+            }
+        }
+    }
+
+    &_btn
+    {
+        border: none;
+        color: white;
+        border-radius: 5px;
+        width: 80px;
+        height: 30px;
+        margin: 5px;
+        box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    }
+
+    &_btn:hover
+    {
+        color: black;
+    }
+
+    &_accept
+    {
+        background: #4785FF;
+    }
+
+    &_reject
+    {
+        background: #EC6D6D;
+    }
+
+    &_view
+    {
+        width: 25px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .tables
+    {
+        padding: 25px 10px 0;
+        width: calc(100vw - 70px);
+
+        &_top p
+        {
+            font-size: 14px;
+        }
+    }
+}

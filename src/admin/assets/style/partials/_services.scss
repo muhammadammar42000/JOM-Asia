@@ -1,0 +1,24 @@
+.services {
+    &_tabs {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 16px;
+        font-size: 16px;
+        text-decoration: underline;
+        color: rgb(156, 156, 156); 
+        p{
+            cursor: pointer;
+        }
+    }
+}
+.tabs-active {
+    color: #1a4e74 !important;
+}
+.main_services{
+
+    &_join {
+        background: #fff;
+        padding-top: 50px;
+        
+    }
+}

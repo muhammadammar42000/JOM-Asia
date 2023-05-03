@@ -1,0 +1,133 @@
+.images360{
+    color:red;
+    font-size: 13px;
+    font-style: italic;
+   }
+   .main {
+       &_images360 {
+   
+           &_body {
+            background-color: #fff;
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            justify-content: center;
+            
+               .main_section {
+                font-size: 13px;
+                padding: 15px;
+                background-color: #CCDDFC;
+                border-radius: 5px;
+                margin-top: 14px;
+                margin-left: 18px;
+                height: 226px;
+                width: 254px;
+               
+                   .top {
+                       display: flex;
+                       justify-content: space-between;
+                       align-items: center;
+                       .red {
+                       color: #D60B20;
+                       }
+                       .date {
+                           font-size: 10px;
+                           color: #1a4e74;
+                       }
+                   }
+                   img {
+                        width: 195px;                        
+                        border-radius: 10px;
+                        height: 100px;
+                   }
+                   .middle {
+                       margin-top: 20px;
+                       display: flex;
+                       margin-left: 12px;
+                       &_content {
+                        padding: 0 22px;                        
+                        .head {
+                            color: #1a4e74;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .text {
+                            display: flex;
+                            font-size: 12px;
+                            color: #1a4e74;
+                            align-items: center;
+                            img {
+                                width: 10%;
+                                height: 12px;
+                            }
+                            p{
+                                margin-left: 10px;
+                            }
+
+                        }
+                        .text:not(:first-child) {
+                            margin-top: 5px;
+                        }
+                    }
+                   }
+                   .bottom {
+                       text-align: center;
+                       margin-top: 22px;
+
+                       .accept{
+                           background-color: #4785FF;
+                           color: #fff;
+                           border: none;
+                           padding: 7px;
+                           margin-right: 10px;
+                           font-size: 10px;
+                           border-radius: 5px;
+                           width: 70px;
+                           box-shadow: 0 0 20px 0px #7298e6;
+                       }
+                       .reject{
+                           background-color: #EC6D6D;
+                           color: #fff;
+                           border: none;
+                           padding: 7px;
+                           margin-right: 10px;
+                           font-size: 10px;
+                           border-radius: 5px;
+                           width: 70px;
+                           box-shadow: 0 0 20px 0px #eaa2a2;
+   
+                       }
+                   }
+               }
+           }
+               &_heading {
+                font-size: 21px;
+                color: #37435C;
+                margin: 24px 0;
+                margin-bottom: 29px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 20px;
+
+                .date {
+                    border: none;
+                    border-radius: 8px;
+                    margin-left: 35px;
+                    height: 44px;
+                    width: 134px;
+                    padding: 0px 12px;
+                    font-size: 12px;
+                }
+               }
+       }
+   }
+@media (max-width: 1045px)
+{
+    .main_images360_body {
+        justify-content: center;
+    
+    }
+}

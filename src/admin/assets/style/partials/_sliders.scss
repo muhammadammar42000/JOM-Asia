@@ -1,0 +1,119 @@
+.sliders{
+
+
+    &_heading {
+        font-size: 21px;
+        color: #37435C;
+        margin: 24px 0;
+        margin-bottom: 29px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+    &_btn {
+        background-color: transparent;
+        color: #707070;
+        border: 2px solid #9A999D;
+        padding: 8px;
+        margin-right: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    &_body {
+        background-color: #fff;
+        padding: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    &_items {
+        width: 334px;
+        position: relative;
+        margin-left: 19px;
+        margin-top: 10px;
+        border-radius: 19px;
+        position: relative;
+        
+        img {
+            width: 100%;
+            height: 263px;
+            border-radius: 19px;
+        }
+        i {
+            display: none;
+        }
+    }
+    &_items:hover {
+        background-color: black;
+        img {
+           opacity: 0.5;
+        }
+        i {
+            display: block;
+            position: absolute;
+            font-size: 20px;
+            top: 15px;
+            left: 290px;
+            color: #c80922;
+            opacity: 0.8;        
+        }
+    }
+   }
+   @media (max-width: 480px)
+   {
+    .sliders_items:hover i {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 15px;
+        left: 250px;
+        color: #c80922;
+        opacity: 0.8;
+    }
+   }
+   @media (max-width: 440px)
+   {
+    .sliders_items:hover i {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 15px;
+        left: 210px;
+        color: #c80922;
+        opacity: 0.8;
+    }
+   }
+   @media (max-width: 400px)
+   {
+    .sliders_items:hover i {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 15px;
+        left: 170px;
+        color: #c80922;
+        opacity: 0.8;
+    }
+   }
+   @media (max-width: 360px)
+   {
+    .sliders_items:hover i {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 15px;
+        left: 130px;
+        color: #c80922;
+        opacity: 0.8;
+    }
+   }
+   
+   
+   

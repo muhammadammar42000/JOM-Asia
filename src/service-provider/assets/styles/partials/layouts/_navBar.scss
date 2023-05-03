@@ -1,0 +1,91 @@
+.navBar
+{
+    background: linear-gradient(180deg, #10afdc, #1e2c4f);
+    min-height: 100vh;
+    padding: 10px 15px;
+    width: 50px;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    &_active
+    {
+        width: 250px;
+        transition: 0.3s ease-in-out;
+    }
+
+    &_open
+    {
+        cursor: pointer;
+        margin-right: auto;
+        color: white;
+        font-size: 35px;
+        margin-left: -7px;
+    }
+
+    &_close
+    {
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    &_inner
+    {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &_logo
+    {
+        width: 180px;
+    }
+
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    li
+    {
+        list-style-type: none;
+        margin-bottom: 15px;
+
+        img
+        {
+            width: 22px;
+            margin-right: 20px;
+        }
+    }
+
+    a
+    {
+        padding: 12px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    a:hover
+    {
+                background-image: linear-gradient(0deg, #1e2c4f, #10afdc);
+
+    }
+
+    a.active
+    {
+                background-image: linear-gradient(0deg, #1e2c4f, #10afdc);
+
+    }
+}

@@ -1,0 +1,739 @@
+.booking {
+  width: 100%;
+  // padding-left: 50px ;
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  // .swiper-slide {
+  //     margin: 0px 5px !important;
+  //     padding: 0px 50px;
+  // }
+
+  .swiper-wrapper {
+    margin-top: 30px;
+    align-items: center !important;
+    /* padding: 50px 0px;*/
+  }
+
+  // .swiper-slide {
+  //     width: 120px !important;
+  // }
+
+  .swiper {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0px 10px;
+    // margin: 0px 10px;
+    z-index: 1;
+  }
+
+  @media (max-width: 800px) {
+    .swiper {
+      /* margin-left: auto; */
+      /* margin-right: auto; */
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0px 20px;
+      // margin: 0px 10px;
+      z-index: 1;
+    }
+  }
+
+  // .swiper-slide .swiper-slide-active {
+  //  width: 100px;
+  //  margin: 0px 10px;
+  // }
+
+  .addBackgroundIcon {
+    width: 200px;
+    z-index: 999;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    cursor: pointer;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  &_left {
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+
+    .backgroundImg {
+      width: 90%;
+      height: 600px;
+      border-bottom-left-radius: 30%;
+      border-bottom-right-radius: 30%;
+      filter: brightness(50%);
+      object-fit: fill;
+      box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
+      position: relative !important;
+    }
+  }
+
+  &_leftInner {
+    position: relative;
+  }
+
+  &_top {
+    position: absolute;
+    // z-index: 999;
+    top: 30px !important;
+    width: 90%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .backBtn {
+      height: 30px;
+      width: 20px;
+      cursor: pointer;
+      // z-index: 999 !important;
+    }
+
+    .ratingPoint {
+      font-size: 18px;
+      color: white;
+    }
+
+    .starIcon {
+      margin-bottom: 5px;
+      width: 20px;
+    }
+
+    .logoMid {
+      position: absolute;
+    }
+  }
+
+  &_ratingSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+  }
+
+  &_logoSection {
+    position: absolute;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 20px 10px;
+
+    .logoMid {
+      width: 100px;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .circle {
+      width: 120px;
+      height: 120px;
+      background-color: white;
+      border-radius: 100px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hotelName {
+      margin-top: 20px;
+      font-size: 25px;
+      color: white;
+      font-weight: 590;
+      text-align: center;
+    }
+
+    .addLogoIcon {
+      position: absolute;
+      width: 40px;
+      right: 0px;
+      top: 0px;
+      cursor: pointer;
+    }
+  }
+
+  &_LogoUploader {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative;
+    // top: -50px;
+    overflow: hidden;
+    // width: 25%;
+    cursor: pointer;
+
+    .uploadFile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    .uploadFile:focus + label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+    .uploadFile + label * {
+      pointer-events: none;
+    }
+
+    .viewImg {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  &_imgUploader {
+    width: 100%;
+    height: 100px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    position: absolute;
+    overflow: hidden;
+    top: -62px;
+    right: -35px;
+
+    .uploadFile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    .uploadFile:focus + label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+    .uploadFile + label * {
+      pointer-events: none;
+    }
+
+    .updloadImgIcon {
+      img {
+        width: 40px;
+        margin-top: 40px;
+        cursor: pointer;
+      }
+    }
+
+    .viewImg {
+      margin-top: 30px;
+      margin-left: 20px;
+      width: 50%;
+    }
+  }
+
+  &_SlideAdd {
+    // height: 100px;
+    // background-color: red;
+    // display: flex;
+    // width: 195px;
+    // justify-content: flex-start !important;
+    // align-items: center !important;
+    // position: relative;
+    // overflow: hidden;
+    // background-color: red;
+    /* top: -40px; */
+    /* right: -35px;*/
+    position: relative;
+    bottom: 13px;
+
+    .uploadFile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    .uploadFile:focus + label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+    .uploadFile + label * {
+      pointer-events: none;
+    }
+
+    .updloadImgIcon {
+      img {
+        width: 98px;
+        // margin-top: 40px;
+        cursor: pointer;
+      }
+    }
+
+    .viewImg {
+      width: 95%;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  &_locationInfo {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    // width: 200px;
+    padding: 20px 10px;
+
+    .locationIcon {
+      width: 23px;
+    }
+
+    p {
+      padding: 0px 30px;
+      color: wheat;
+      font-size: 14px;
+    }
+  }
+
+  // right side
+
+  &_right {
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &_rightInner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .descriptionHead {
+      font-size: 28px;
+      color: rgb(43, 43, 43);
+      font-weight: 5600 !important;
+      margin-top: 60px;
+    }
+
+    .descriptionPara {
+      font-size: 13px;
+      padding: 10px 20px;
+      text-align: center;
+      color: grey;
+      margin-top: 20px;
+    }
+
+    .contactHead {
+      font-size: 28px;
+      color: rgb(43, 43, 43);
+      font-weight: 5600 !important;
+      margin-top: 50px;
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  &_sliderWrapper {
+    max-width: calc(108% - 115px);
+    // background-color: red;
+    // height: 200px;
+    padding: 20px 40px;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+  }
+
+  &_sliderChild {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 90%;
+    // position: relative;
+    // right: 50px !important;
+    padding: 20px 0;
+    // background-color: yellow;
+    height: 160px;
+
+    .sliderImg {
+      width: 100px;
+      height: 100px;
+    }
+
+    .crossIcon {
+      margin-top: 10px;
+      width: 30px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      left: 33px;
+    }
+
+    .addImgIcon {
+      border: 1px solid black;
+      cursor: pointer;
+    }
+
+    img {
+      width: 90px;
+      border-radius: 20px;
+    }
+  }
+
+  &_paraWrapper {
+    margin-top: 20px;
+    width: 80%;
+    height: 200px;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0px 0px 19px -12px black;
+  }
+
+  &_paraWrapper::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+  }
+
+  &_btn {
+    width: 80%;
+    padding: 20px 10px;
+    /* background: red; */
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      padding: 10px 0px;
+      width: 220px;
+      border-radius: 20px;
+      background-color: #2ab2db;
+      border: none;
+      outline: none;
+      color: white;
+    }
+  }
+
+  &_linkSection {
+    width: 70%;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_section {
+    width: 48%;
+    background-color: #c8dfe6;
+    margin: 10px 0px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .smallHead {
+      color: black;
+      font-size: 13px;
+      font-weight: 650 !important;
+    }
+
+    .smallInfo {
+      margin-top: 10px;
+      color: grey;
+      font-size: 13px;
+      font-weight: 650 !important;
+    }
+  }
+
+  &_save {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    button {
+      padding: 10px 0px;
+      width: 220px;
+      border-radius: 20px;
+      background-color: #2ab2db;
+      border: none;
+      outline: none;
+      color: white;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    .booking {
+      &_sliderWrapper {
+        max-width: calc(115% - 15px);
+        padding: 0px 20px;
+      }
+    }
+  }
+
+  @media (max-width: 997px) {
+    // left side
+    //   .swiper-slide.swiper-slide-active {
+    //     width: 50% !important;
+    //     // background: red;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    .booking {
+      &_sliderWrapper {
+        max-width: calc(150% - 15px);
+        padding: 0px 10px;
+      }
+    }
+
+    // .swiper-slide .swiper-slide-next {
+    //   width: 100%;
+    // //   background-color: red;
+    // }
+
+    // .swiper-slide .swiper-slide-previous {
+    //     width: 100%;
+    //     // background-color: red;
+    //   }
+
+    .booking_LogoUploader {
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+      position: relative;
+      top: -50px;
+      right: -30px;
+      overflow: hidden;
+      width: 25%;
+      cursor: pointer;
+    }
+
+    .addBackgroundIcon {
+      width: 200px;
+      z-index: 999;
+      height: 100px;
+      position: absolute;
+      bottom: 0px;
+      right: -120px;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+      }
+    }
+
+    //   .swiper {
+    //     /* margin-left: auto; */
+    //     /* margin-right: auto; */
+    //     position: relative;
+    //     overflow: hidden;
+    //     list-style: none;
+    //     padding: 0px 20px;
+    //     /* margin: 0px 100px; */
+    //     z-index: 1;
+    // }
+
+    &_left {
+      max-width: 100%;
+      position: relative;
+
+      .backgroundImg {
+        width: 100%;
+        height: 500px;
+      }
+    }
+
+    // .swiper-slide {
+    // margin: 0px 50px !important;
+    // }
+    &_top {
+      width: 100%;
+    }
+
+    &_btn {
+      width: 100%;
+      margin: 20px 0px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &_logoSection {
+      position: absolute;
+      top: 140px;
+      width: 100%;
+    }
+
+    // right side
+
+    &_right {
+      max-width: 100%;
+      position: relative;
+      // background-color: yellow;
+    }
+
+    &_rightInner {
+      .descriptionPara {
+        font-size: 13px;
+        padding: 10px 20px;
+        text-align: center;
+        color: grey;
+        margin-top: 20px;
+      }
+    }
+
+    //     .booking {
+
+    //         // &_sliderWrapper {
+    //         //     max-width: calc(100% - 15px);
+    //         //     padding: 0px 10px;
+    //         //     display: flex;
+    //         //     justify-content: space-around;
+    //         //     margin-right: 50px !important ;
+    //         // }
+
+    //         &_sliderChild {
+    //             display: flex;
+    //             flex-direction: column;
+    //             justify-content: center;
+    //             align-items: center;
+    //             width: 0px;
+    //             // margin: 0px 20px;
+    //         }
+
+    // }
+  }
+
+  @media (max-width: 500px) {
+    .booking {
+      padding-left: 0 !important;
+    }
+
+    // .booking_sliderChild {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     width: 50%;
+    //     margin: 0px 10px;
+    // }
+
+    // .swiper-slide.swiper-slide-active {
+    //     width: 50% !important;
+    //     // background: red;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    .booking_LogoUploader {
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+      position: relative;
+      top: -50px;
+      right: -10px;
+      overflow: hidden;
+      width: 25%;
+      cursor: pointer;
+    }
+
+    .addBackgroundIcon {
+      width: 200px;
+      z-index: 999;
+      height: 100px;
+      position: absolute;
+      bottom: -33px;
+      right: -137px;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+      }
+    }
+
+    &_left {
+      max-width: 100%;
+      position: relative;
+
+      .backgroundImg {
+        width: 100%;
+        height: 340px;
+      }
+    }
+
+    // .swiper-slide {
+    //     margin: 0px 30px !important;
+    //     }
+
+    &_logoSection {
+      position: absolute;
+      top: 80px;
+      width: 100%;
+
+      .logoMid {
+        width: 60px;
+      }
+
+      .circle {
+        width: 90px;
+        height: 90px;
+        background-color: white;
+        border-radius: 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hotelName {
+        margin-top: 25px;
+        font-size: 18px;
+        color: white;
+        font-weight: 590;
+        text-align: center;
+      }
+    }
+
+    &_linkSection {
+      width: 80%;
+    }
+
+    &_section {
+      width: 100%;
+    }
+  }
+}
